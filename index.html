@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1fe4ef, #afe6f6);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 2em 0;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1.5s ease;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: bounceIn 2s ease;
+        }
+        header h1 {
+            margin: 0.5em 0 0.2em;
+            font-size: 2.5em;
+            color: #444;
+            animation: fadeIn 2s ease;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background: #f1feff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease;
+        }
+        .container h2 {
+            text-align: center;
+            color: #444;
+            animation: fadeIn 2s ease;
+        }
+        .about {
+            text-align: center;
+            margin: 1em 0;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            margin: 2em 0;
+        }
+        .button a {
+            text-decoration: none;
+            padding: 0.8em 2em;
+            font-size: 1.2em;
+            color: #fff;
+            background: #0078d7;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+        }
+        .button a:hover {
+            background: #0053a0;
+            transform: scale(1.1);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            animation: fadeInUp 1.5s ease;
+        }
+        .social-icons a {
+            font-size: 1.5em;
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0078d7;
+            transform: scale(1.2);
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 2s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                opacity: 0.9;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="./pic.jpg" alt="Your Image">
+        <h1>Gokul Natarajan</h1>
+        <p>Creative UI/UX Designer & Developer</p>
+    </header>
+    <div class="container">
+        <h2>About Me</h2>
+        <p class="about">Hello! I am Gokul, a passionate UI/UX designer and web developer. With a creative mindset and attention to detail, I craft user-friendly and visually appealing designs. I am enthusiastic about turning ideas into reality, solving problems, and making the web a better place. Let’s create something amazing together!</p>
+        <div class="button">
+            <a href="./Resume__Copy_ (2).pdf" download>Download Resume</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://wa.me/your-number" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:your-email@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/your-profile" target="_blank"><i class="fas fa-code"></i></a>
+        </div>
+    </div>
+</body>
+</html>
